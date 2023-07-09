@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Element 2</title>
+
+    <style type="text/css">
+
+        .demo p:first-child{
+            background-color: green;
+            color: white;
+        }
+
+        .demo p:last-child{
+            background-color: green;
+            color: white;
+        }
+
+        .demo p:nth-child(2n+1){
+            background-color: green;
+            color: white;
+        }
+
+        .list li:first-of-type, li:last-of-type{
+            background-color: Yellow;
+            color: Black;
+        }
+
+    </style>  
+
+</head>
+<body>
+    
+    <div class="demo">
+
+        <p>This is a paragraph 1</p>
+        <p>This is a paragraph 2</p>
+        <p>This is a paragraph 3</p>
+        <p>This is a paragraph 4</p>
+
+    </div>
+
+    <div class="list">
+
+        <ul type="square">
+            <li>Home1</li>
+            <li>Home2</li>
+            <li>Home3</li>
+            <li>Home4</li>
+        </ul>
+
+    </div>
+    
+</body>
+</html>

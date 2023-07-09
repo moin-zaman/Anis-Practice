@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Specificity</title>
+
+    <style ty="text/css">
+        /*a=0, b=0,c=1; ===001*/
+        h1{
+            background-color: blue;
+        }
+
+        /*a=0, b=0,c=1; ===001*/
+        h1{
+            background-color: grey;
+        }
+
+        /*a=0, b=1,c=0; ===010*/
+        .title{
+            background-color: brown;
+        }
+
+        /*a=1, b=0,c=0; ===100*/
+        #heading{
+            background-color: yellowgreen;
+        }
+
+        /*a=0, b=1,c=1; ===011*/
+        h1.title{
+            background-color: yellow;
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+
+    <h1 class="title" id="heading">I am learning Css</h1>
+    
+</body>
+</html>

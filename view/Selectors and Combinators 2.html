@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors and Combinators</title>
+
+    <style type="text/css">
+        
+        .selCom p{
+
+            text-align: center;
+            color: brown;
+            font-size: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bolder;
+
+        }
+
+
+        .selCom2 > p{
+
+            text-align: center;
+            color: brown;
+            font-size: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bolder;
+
+        }
+
+        .selCom2 + p{
+
+            text-align: center;
+            color: brown;
+            font-size: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bolder;
+
+        }
+
+
+        .selCom3 ~ p{
+
+        text-align: center;
+        color: brown;
+        font-size: 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bolder;
+
+}
+
+
+    </style>
+
+</head>
+<body>
+    
+    <h1> Selectors and Combinators </h1>
+
+    <div class="selCom" >
+
+        <p> This is a paragraph 1 </p> <!-- This is immediate child + descandent tag -->
+        <p> This is a paragraph 2 </p> <!-- This is immediate child + descandent tag -->
+
+
+        <section>
+
+            <p> This is a paragraph 3 </p> <!-- This is only a descandent tag -->
+
+        </section>
+
+    </div>
+
+
+
+        <div class="selCom2" >
+
+            <p> This is a paragraph 4 </p> <!-- This is immediate child + descandent tag -->
+            <p> This is a paragraph 5 </p> <!-- This is immediate child + descandent tag -->
+
+                <section>
+
+                <p> This is a paragraph 6 </p> <!-- This is only a descandent tag -->
+
+                </section>
+
+        </div>
+
+        <p> This is a paragraph 7 </p>
+        <p> This is a paragraph 8 </p>
+
+
+
+
+            <div class="selCom3" >
+
+                <p> This is a paragraph 9 </p> <!-- This is immediate child + descandent tag -->
+                <p> This is a paragraph 10 </p> <!-- This is immediate child + descandent tag -->
+
+                    <section>
+
+                    <p> This is a paragraph 11 </p> <!-- This is only a descandent tag -->
+
+                    </section>
+
+            </div>
+
+            <p> This is a paragraph 12 </p>
+            <p> This is a paragraph 13 </p>
+
+
+
+</body>
+</html>

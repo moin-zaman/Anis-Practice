@@ -1,0 +1,40 @@
+*{
+    background-color: black;
+}
+
+
+h1{
+    background-color: cadetblue;
+}
+
+.para1{
+    background-color: blueviolet;
+}
+
+.center1{
+    color: burlywood;
+    text-align: center;
+    font-style: oblique;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#para2{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    background-color: crimson;
+
+}
+
+.para3, .para4{
+    font-size: 70px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    background-color: rgb(20, 220, 130);
+    
+}
+
+h3,h4,pre{
+    background-color: dodgerblue;
+}
